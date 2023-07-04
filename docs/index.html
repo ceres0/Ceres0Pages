@@ -39,10 +39,18 @@
             return this.origin.code.apply(this, arguments);
           }
         }
-      }
+      },
+      timeUpdater: {
+        text: ">最后更新时间: {docsify-updated}",
+        formatUpdated: "{YYYY}/{MM}/{DD}",
+        whereToPlace: "bottom",  // "top" or "bottom", default to "bottom"
+      },
     }
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <!-- 流程图支持 -->
   <script src="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <!-- 日期更新 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-updated/src/time-updater.min.js"></script>
 </html>
